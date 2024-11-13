@@ -1,4 +1,4 @@
-package goit.models;
+package goit.model;
 
 public class MaxProjectCountClient {
     private String name;

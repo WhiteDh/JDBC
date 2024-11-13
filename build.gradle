@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.flywaydb.flyway' version '10.21.0'
+
 }
 
 group = 'goit'
@@ -13,6 +15,16 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'com.h2database:h2:2.3.232'
+    implementation 'org.flywaydb:flyway-core:10.21.0'
+}
+
+
+flyway {
+    url = 'jdbc:h2:~/test'
+    user = 'sa'
+    password = ''
+    locations = ['classpath:src/main/resources/db/migration']
+
 }
 
 test {

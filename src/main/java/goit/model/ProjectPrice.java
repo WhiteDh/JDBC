@@ -1,4 +1,4 @@
-package goit.models;
+package goit.model;
 
 public class ProjectPrice {
     private int id;

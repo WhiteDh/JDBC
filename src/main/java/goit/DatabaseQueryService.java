@@ -1,6 +1,6 @@
 package goit;
 
-import goit.models.*;
+import goit.model.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
